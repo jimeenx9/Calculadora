@@ -8,7 +8,7 @@ public class Calculadora {
      * @param num2 El segundo número.
      * @return La suma de los dos números.
      */
-    public static int sumar(int num1, int num2) {
+    public static int sumando(int num1, int num2) {
         return num1 + num2;
     }
 
@@ -69,7 +69,7 @@ public class Calculadora {
     public int calculadora(int num1, int num2, char operacion) {
         switch (operacion) {
             case '+':
-                return sumar(num1, num2);
+                return sumando(num1, num2);
             case '-':
                 return restar(num1, num2);
             case '*':

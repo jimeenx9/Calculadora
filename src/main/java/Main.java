@@ -23,7 +23,7 @@ public class Main {
         try {
             switch (opcion) {
                 case 1:
-                    resultado = calculadora.sumar(num1, num2);
+                    resultado = calculadora.sumando(num1, num2);
                     break;
                 case 2:
                     resultado = calculadora.restar(num1, num2);
