@@ -1,50 +1,88 @@
 public class Calculadora {
 
     // Método sumar
-    public int sumar(int a, int b) {
-        System.out.println("Realizando suma...");
-        return a + b;
+    /**
+     * Suma dos números.
+     *
+     * @param num1 El primer número.
+     * @param num2 El segundo número.
+     * @return La suma de los dos números.
+     */
+    public static int sumar(int num1, int num2) {
+        return num1 + num2;
     }
 
     // Método restar
-    public int restar(int a, int b) {
+    /**
+     * Resta dos números.
+     *
+     * @param num1 El primer número.
+     * @param num2 El segundo número.
+     * @return La resta de num1 y num2.
+     */
+    public int restar(int num1, int num2) {
         System.out.println("Realizando resta...");
-        return a - b;
+        return num1 - num2;
     }
 
     // Método multiplicar
-    public int multiplicar(int a, int b) {
+    /**
+     * Multiplica dos números.
+     *
+     * @param num1 El primer número.
+     * @param num2 El segundo número.
+     * @return El resultado de multiplicar num1 por num2.
+     */
+    public int multiplicar(int num1, int num2) {
         System.out.println("Realizando multiplicación...");
-        return a * b;
+        return num1 * num2;
     }
 
     // Método dividir
-    public int dividir(int a, int b) {
-        if (b == 0) {
+    /**
+     * Divide dos números.
+     *
+     * @param num1 El primer número.
+     * @param num2 El segundo número.
+     * @return El resultado de dividir num1 entre num2.
+     * @throws ArithmeticException Si num2 es 0, se lanza una excepción.
+     */
+    public int dividir(int num1, int num2) {
+        if (num2 == 0) {
             System.out.println("Error: División por cero. Lanzando excepción...");
             throw new ArithmeticException();
         }
         System.out.println("Realizando división...");
-        return a / b;
+        return num1 / num2;
     }
 
     // Método calculadora
-    public int calculadora(int a, int b, char operacion) {
+    /**
+     * Realiza una operación aritmética entre dos números.
+     *
+     * @param num1 El primer número.
+     * @param num2 El segundo número.
+     * @param operacion El operador a realizar ('+', '-', '*', '/').
+     * @return El resultado de la operación.
+     * @throws IllegalArgumentException Si el operador no es válido.
+     */
+    public int calculadora(int num1, int num2, char operacion) {
         switch (operacion) {
             case '+':
-                return sumar(a, b);
+                return sumar(num1, num2);
             case '-':
-                return restar(a, b);
+                return restar(num1, num2);
             case '*':
-                return multiplicar(a, b);
+                return multiplicar(num1, num2);
             case '/':
-                return dividir(a, b);
+                return dividir(num1, num2);
             default:
                 throw new IllegalArgumentException("Operación no válida");
         }
     }
 
-        /**
+    // Método potencia
+    /**
      * Calcula la potencia de un número.
      *
      * @param base La base de la potencia.
@@ -55,17 +93,15 @@ public class Calculadora {
         return Math.pow(base, exponente);
     }
 
-        /**
+    // Método media
+    /**
      * Calcula la media de dos números.
      *
-     * @param a El primer número.
-     * @param b El segundo número.
-     * @return La media de a y b.
+     * @param num1 El primer número.
+     * @param num2 El segundo número.
+     * @return La media de num1 y num2.
      */
-    public static double media(double a, double b) {
-        return (a + b) / 2;
+    public static double media(double num1, double num2) {
+        return (num1 + num2) / 2;
     }
-
-
-    
 }
