@@ -44,5 +44,17 @@ public class Calculadora {
         }
     }
 
+        /**
+     * Calcula la potencia de un número.
+     *
+     * @param base La base de la potencia.
+     * @param exponente El exponente al que se elevará la base.
+     * @return El resultado de base^exponente.
+     */
+    public static double potencia(double base, int exponente) {
+        return Math.pow(base, exponente);
+    }
+
+
     
 }
