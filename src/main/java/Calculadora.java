@@ -81,44 +81,29 @@ public class Calculadora {
         }
     }
 
-    // Método potencia
+    // Método que usa la clase Estadistica
     /**
-     * Calcula la potencia de un número.
-     *
-     * @param base La base de la potencia.
-     * @param exponente El exponente al que se elevará la base.
-     * @return El resultado de base^exponente.
-     */
-    public static double potencia(double base, int exponente) {
-        return Math.pow(base, exponente);
-    }
-
-    // Método media
-    /**
-     * Calcula la media de dos números.
+     * Llama al método media de la clase Estadistica.
      *
      * @param num1 El primer número.
      * @param num2 El segundo número.
      * @return La media de num1 y num2.
      */
-    public static double media(double num1, double num2) {
-        return (num1 + num2) / 2;
+    public double calcularMedia(double num1, double num2) {
+        Estadistica estadistica = new Estadistica();
+        return estadistica.media(num1, num2);
     }
 
-        /**
-     * Multiplica tres números.
+    // Método que usa la clase Estadistica
+    /**
+     * Llama al método potencia de la clase Estadistica.
      *
-     * @param a Primer número.
-     * @param b Segundo número.
-     * @param c Tercer número.
-     * @return El resultado de la multiplicación de los tres números.
+     * @param base La base de la potencia.
+     * @param exponente El exponente al que se elevará la base.
+     * @return El resultado de base^exponente.
      */
-    public static double multiplicacion_de_3(double a, double b, double c) {
-        return a * b * c;
+    public double calcularPotencia(double base, int exponente) {
+        Estadistica estadistica = new Estadistica();
+        return estadistica.potencia(base, exponente);
     }
-
-
-
-    
-
 }
