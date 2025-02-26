@@ -55,6 +55,17 @@ public class Calculadora {
         return Math.pow(base, exponente);
     }
 
+        /**
+     * Calcula la media de dos números.
+     *
+     * @param a El primer número.
+     * @param b El segundo número.
+     * @return La media de a y b.
+     */
+    public static double media(double a, double b) {
+        return (a + b) / 2;
+    }
+
 
     
 }
