@@ -66,6 +66,19 @@ public class Calculadora {
         return (a + b) / 2;
     }
 
+        /**
+     * Multiplica tres números.
+     *
+     * @param a Primer número.
+     * @param b Segundo número.
+     * @param c Tercer número.
+     * @return El resultado de la multiplicación de los tres números.
+     */
+    public static double multiplicacion_de_3(double a, double b, double c) {
+        return a * b * c;
+    }
+
+
 
     
 }
